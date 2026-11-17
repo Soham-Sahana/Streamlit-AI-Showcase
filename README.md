@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Streamlit%20ML%20Showcase&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Interactive%20Machine%20Learning%20%7C%20Computer%20Vision%20%7C%20LangChain%20RAG&descSize=16&descAlignY=58&descColor=ffffff"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Streamlit%20AI%20Showcase&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Interactive%20AI%20%7C%20Deep%20Learning%20%7C%20Computer%20Vision%20%7C%20LangChain%20RAG&descSize=16&descAlignY=58&descColor=ffffff"/>
 
 </div>
 
@@ -14,7 +14,7 @@
 
 <br/>
 
-### A curated collection of interactive Machine Learning, Deep Learning, and AI applications built with Streamlit.
+### A curated collection of interactive AI, Deep Learning, and Computer Vision applications built with Streamlit.
 
 <br/>
 
@@ -67,7 +67,7 @@ A hands-on reference implementation demonstrating essential Streamlit UI paradig
 ## 🏗️ Project Structure
 
 ```
-Streamlit-ML-Showcase/
+Streamlit-AI-Showcase/
 │
 ├── 📘 01_langchain_rag_cpp/
 │   ├── cpp_rag_assistant.py        # Full LangChain + FAISS + Ollama assistant
@@ -94,8 +94,8 @@ Streamlit-ML-Showcase/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Soham-Sahana/Streamlit-ML-Showcase.git
-cd Streamlit-ML-Showcase
+git clone https://github.com/Soham-Sahana/Streamlit-AI-Showcase.git
+cd Streamlit-AI-Showcase
 ```
 
 ### 2. Set up a virtual environment
