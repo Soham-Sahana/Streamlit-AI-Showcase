@@ -31,7 +31,10 @@ An interactive Q&A assistant built with LangChain, FAISS vector search, and loca
 
 - **Stack**: LangChain, FAISS, HuggingFace Embeddings (`all-MiniLM-L6-v2`), Ollama (`gemma2:2b`), Streamlit
 - **Directory**: `01_langchain_rag_cpp/`
-- **Variants**: Includes single-document Q&A, multi-turn conversational interface, and lightweight retrieval inspection demo.
+- **Modules**:
+  - `cpp_rag_assistant.py`: Full interactive RAG assistant with Ollama Gemma-2 and passage viewer
+  - `cpp_qa_chatbot.py`: Prompt-engineered single-turn Q&A chatbot
+  - `cpp_similarity_search.py`: Lightweight semantic similarity inspection demo
 
 ---
 
@@ -44,6 +47,9 @@ A complete computer vision app to train and evaluate Convolutional Neural Networ
   - Interactive prediction mode: upload any test image and receive top-predicted class with confidence score.
 - **Stack**: TensorFlow, Keras, Matplotlib, Streamlit
 - **Directory**: `02_cnn_image_classifier/`
+- **Modules**:
+  - `cnn_classifier_app.py`: Web dashboard for training and inference
+  - `cnn_model.py`: Keras Sequential CNN architecture specification
 
 ---
 
@@ -53,6 +59,8 @@ A hands-on reference implementation demonstrating essential Streamlit UI paradig
 - **Features**: Dataframe filtering, reactive graphs, form authentication flow, dynamic input widgets.
 - **Stack**: Streamlit, Pandas, NumPy
 - **Directory**: `03_streamlit_tutorial/`
+- **Modules**:
+  - `streamlit_showcase_app.py`: Comprehensive Streamlit widget & layout showcase
 
 ---
 
@@ -62,17 +70,17 @@ A hands-on reference implementation demonstrating essential Streamlit UI paradig
 Streamlit-ML-Showcase/
 │
 ├── 📘 01_langchain_rag_cpp/
-│   ├── app.py                  # Full LangChain + FAISS + Ollama assistant
-│   ├── chatbot.py              # LLM-prompted QA interface
-│   ├── chatbot_demo.py         # Lightweight similarity search viewer
-│   └── Cpp.txt                 # Knowledge base document
+│   ├── cpp_rag_assistant.py        # Full LangChain + FAISS + Ollama assistant
+│   ├── cpp_qa_chatbot.py           # LLM-prompted QA interface
+│   ├── cpp_similarity_search.py    # Lightweight similarity search viewer
+│   └── Cpp.txt                     # Knowledge base document
 │
 ├── 🧠 02_cnn_image_classifier/
-│   ├── app.py                  # Interactive CNN trainer and classifier UI
-│   └── cnn_model.py            # Modular Keras Sequential CNN architecture
+│   ├── cnn_classifier_app.py       # Interactive CNN trainer and classifier UI
+│   └── cnn_model.py                # Modular Keras Sequential CNN architecture
 │
 ├── 🎨 03_streamlit_tutorial/
-│   └── app.py                  # Comprehensive Streamlit widget & layout showcase
+│   └── streamlit_showcase_app.py   # Comprehensive Streamlit widget & layout showcase
 │
 ├── .gitignore
 ├── requirements.txt
@@ -113,14 +121,14 @@ pip install -r requirements.txt
 Each project is independent and can be executed with `streamlit run`:
 
 ```bash
-# Run the LangChain RAG application
-streamlit run 01_langchain_rag_cpp/app.py
+# Run the LangChain C++ RAG Assistant
+streamlit run 01_langchain_rag_cpp/cpp_rag_assistant.py
 
 # Run the CNN Image Classifier
-streamlit run 02_cnn_image_classifier/app.py
+streamlit run 02_cnn_image_classifier/cnn_classifier_app.py
 
 # Run the Streamlit Playbook
-streamlit run 03_streamlit_tutorial/app.py
+streamlit run 03_streamlit_tutorial/streamlit_showcase_app.py
 ```
 
 > **Note for Local LLM (LangChain RAG):** Ensure [Ollama](https://ollama.ai) is installed and the model is pulled before running:
